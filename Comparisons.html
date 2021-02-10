@@ -3,12 +3,12 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Web Visualization Dashboard</title>
+    <title>Comparisons</title>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -21,31 +21,34 @@
   </head>
   
   <body>
-    <!-- Navigation Section -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html" style="color: white">Latitude</a>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="Comparisons.html">Comparisons</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Data.html">Data</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Plots
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" href="humidity.html">Humidity</a>
-              <a class="dropdown-item" href="max_temperature.html">Temperature</a>
-              <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <!-- Navigation Section -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html" style="color: white">Latitude</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="Comparisons.html">Comparisons</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Data.html">Data</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plots
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+          <a class="dropdown-item" href="humidity.html">Humidity</a>
+          <a class="dropdown-item" href="max_temperature.html">Temperature</a>
+          <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
 
 
   <!-- Content here -->
@@ -61,7 +64,7 @@
       
                 <div class="col-md-6"><h3 class="text-center" style="color: rgb(43, 201, 201)">vs. Max Temperature</h3>
                   <a href="max_temperature.html"><img src="Resources/assets/images/Fig1.png" width="100%" alt="max_temperature">
-                  </div> 
+                </div> 
                 <div class="col-md-6">
                   <h3 class="text-center" style="color: rgb(43, 201, 201)">vs. Humidity</h3><a href="humidity.html"
                   ><img src="Resources/assets/images/Fig2.png" width="100%" alt="humidity">
@@ -74,10 +77,11 @@
                 <div class="col-md-6">
                   <h3 class="text-center" style="color: rgb(43, 201, 201)">vs. Wind Speed</h3>
                   <a href="wind_speed.html"><img src="Resources/assets/images/Fig4.png" width="100%" alt="wind_speed">
-                  </div> 
               </div>
+            </div>
           </div>
-      </div>
+        </div>
+       </div>
     </div>
   
     <!-- Start of footer -->
