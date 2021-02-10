@@ -8,6 +8,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
     <title>Web Visualization Dashboard</title>
 
      <!--CSS Link-->
@@ -18,9 +24,9 @@
   <body>
     <!-- Navigation Section -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Latitude</a>
+        <a class="navbar-brand" href="index.html" style="color: white">Latitude</a>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="Comparisons.html">Comparisons</a>
           </li>
@@ -42,37 +48,49 @@
       </div>
     </nav>
 
-    <div class="container">
-      <!-- Content here -->
-    </div>
 
-    <div class="row">
-      <div class="col-md-4">
+      <!-- Content here -->
+   
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7" style="background-color:white">
+          <h3 style="color: rgb(43, 201, 201)">Humidity</h3>
+          <hr></hr>
         <div class="thumbnail">
           <img src="resources/assets/images/Fig2.png" alt="..." class="img-thumbnail">
         </div>
-        <div class="caption">
-            <h3>Humidity</h3>
+        <div class="box">
             <p>This graph shows that latitude and humidity do not have a strong correlation.
-               Given the wide variety of percentages at different latitudes, we cannot determine a 
-               definitive pattern between these two variables.</p>
+            Given the wide variety of percentages at different latitudes, we cannot determine a 
+            definitive pattern between these two variables.</p>
             <p>However, the highest humidity was on the equator.</p>
           </div>
       </div>
 
-        <div class="row row-cols-2">
-          <div class="col">Max Temperature<a href="max_temperature.html"><img src="Resources/assets/images/Fig1.png" class="img-fluid" alt=""></div>
-          <div class="col">Humidity<a href="humidity.html"><img src="Resources/assets/images/Fig2.png" class="img-fluid" alt=""></div>
-          <div class="col">Cloudiness<a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" class="img-fluid" alt=""></div>
-          <div class="col">Wind Speed<a href="wind_speed.html"><img src="Resources/assets/images/Fig4.png" class="img-fluid" alt=""></div> 
-        </div>
-        
-        
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+     <div class="col-md-4 offset-md-1" style="background-color:white">
+      <h3 style="color: rgb(43, 201, 201)">Visualizations</h3>
+      <hr></hr>
+      <div class="row">
+        <div class="col-3 col-md-6"><a href="max_temperature.html"><img src="Resources/assets/images/Fig1.png" class="img-fluid" alt=""></div> 
+        <div class="col-3 col-md-6"><a href="humidity.html"><img src="Resources/assets/images/Fig2.png" class="img-fluid" alt=""></div>
+        <div class="col-3 col-md-6"><a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" class="img-fluid" alt=""></div>
+        <div class="col-3 col-md-6"><a href="wind_speed.html"><img src="Resources/assets/images/Fig4.png" class="img-fluid" alt=""></div> 
+    </div>
+   </div> 
+  </div>  
+
+        
+     <!-- Start of footer -->
+  <footer class="page-footer font-small footer-dark">
+    <div class="footer-copyright text-center py-3">© Copyright UR Data Bootcamp 2021</div>
+  </footer>
+  </body>
+  </html>
+    <!-- End of footer -->        
+
+    
   </body>
 </html>
